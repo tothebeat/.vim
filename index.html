@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>.vim by tothebeat</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">.vim</h1>
+        <p class="header">My vim config files. Consume at your own risk. </p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/tothebeat/.vim/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/tothebeat/.vim/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/tothebeat/.vim">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/tothebeat">tothebeat</a></p>
+
+
+      </header>
+      <section>
+        <p>After cloning, run install.sh. </p>
+
+<p>This script does the following:</p>
+
+<pre><code>rm ~/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
+</code></pre>
+
+<p>This removes the .vimrc file in the home directory if it's already there, 
+and then creates it again only as a symbolic link to ~/.vim/vimrc. </p>
+
+<pre><code>cd ~/.vim/
+git submodule update --init
+</code></pre>
+
+<p>This will clone the submodules syntastic and vim-colors-solarized.</p>
+
+<pre><code>git clone https://github.com/tothebeat/powerline-fonts.git ~/.fonts/
+fc-cache -vf ~/.fonts
+echo Change your font in the terminal program!
+</code></pre>
+
+<p>This downloads the Powerline font pack into your home directory's ~/.fonts/ 
+folder, and then updates the cache using the new fonts. You can then change
+the font used in your terminal program (gterm, terminator, whatever) to one
+of these "... for Powerline" fonts.</p>
+
+<h2>
+<a name="plugin-manager" class="anchor" href="#plugin-manager"><span class="octicon octicon-link"></span></a>Plugin Manager</h2>
+
+<ul>
+<li><a href="https://github.com/tpope/vim-pathogen">vim-pathogen</a></li>
+</ul><h2>
+<a name="plugins" class="anchor" href="#plugins"><span class="octicon octicon-link"></span></a>Plugins</h2>
+
+<ul>
+<li><a href="https://github.com/bling/vim-airline">vim-airline</a></li>
+<li><a href="https://github.com/scrooloose/syntastic">syntastic</a></li>
+</ul><h2>
+<a name="color-schemes" class="anchor" href="#color-schemes"><span class="octicon octicon-link"></span></a>Color Schemes</h2>
+
+<ul>
+<li><a href="https://github.com/altercation/vim-colors-solarized">solarized</a></li>
+<li><a href="https://github.com/Pychimp/Pychimp-vim">pychimp</a></li>
+<li><a href="https://github.com/ciaranm/inkpot">inkpot</a></li>
+<li><a href="https://github.com/tomasr/molokai">molokai</a></li>
+</ul><h2>
+<a name="fonts" class="anchor" href="#fonts"><span class="octicon octicon-link"></span></a>Fonts</h2>
+
+<ul>
+<li>
+<a href="https://github.com/Lokaltog/powerline-fonts">powerline-fonts</a> - Use "Source Code Pro for Powerline Medium" with Terminator.</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
