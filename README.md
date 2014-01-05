@@ -12,3 +12,5 @@ git submodule update
 ```
 
 Then launch vim and type `:BundleInstall`.
+
+![Screenshot](screenshot.png)
